@@ -1,7 +1,7 @@
 set :stages, %w(production development staging)
-set :default_stage, "staging"
+set :default_stage, "production"
 set :application, "danbooru"
-set :repo_url,  "git://github.com/danbooru/danbooru.git"
+set :repo_url,  "git://github.com/foone/pcbooru.git"
 set :deploy_to, "/var/www/danbooru2"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle"
 set :branch, ENV.fetch("branch", "master")
